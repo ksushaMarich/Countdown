@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "mix-of-different-attributes-of-events--party--birt 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "mix-of-different-attributes-of-events--party--birt 2.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "mix-of-different-attributes-of-events--party--birt 3.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

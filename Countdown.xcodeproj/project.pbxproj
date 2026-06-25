@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F77F072E0C1949002BE0B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F77F062E0C1949002BE0B3 /* LaunchScreen.storyboard */; };
+		164844942EA28D7600532266 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164844932EA28D7600532266 /* MainTabBarController.swift */; };
+		1663B9A02E7AE01B00D7901E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663B99E2E7AE01B00D7901E /* Event.swift */; };
+		1663B9B22E7AE10C00D7901E /* CustomCategoryColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663B9B02E7AE10C00D7901E /* CustomCategoryColorType.swift */; };
+		167FDCEC2E6EDCC100CF5322 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167FDCEB2E6EDCC100CF5322 /* WidgetKit.framework */; };
+		167FDCEE2E6EDCC100CF5322 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167FDCED2E6EDCC100CF5322 /* SwiftUI.framework */; };
+		167FDCFF2E6EDCC300CF5322 /* EventAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 167FDCEA2E6EDCC100CF5322 /* EventAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1773461A099A5914F9A0C91A /* Pods_Countdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C373F74C7F10A3F2342D9D6 /* Pods_Countdown.framework */; };
+		2136ECFA2E0A0710002C0499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136ECF32E0A0710002C0499 /* AppDelegate.swift */; };
+		2136ECFB2E0A0710002C0499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136ECF82E0A0710002C0499 /* SceneDelegate.swift */; };
+		2136ECFC2E0A0710002C0499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2136ECF42E0A0710002C0499 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		167FDCFD2E6EDCC300CF5322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2136ECBD2E0A06C0002C0499 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 167FDCE92E6EDCC100CF5322;
+			remoteInfo = EventAppWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		167FDD002E6EDCC300CF5322 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				167FDCFF2E6EDCC300CF5322 /* EventAppWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11F77F052E0C1949002BE0B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		164844932EA28D7600532266 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		165B9BFE2E8FD74800A4AE21 /* EventAppWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventAppWidgetExtension.entitlements; sourceTree = "<group>"; };
+		165B9BFF2E8FD86F00A4AE21 /* Countdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Countdown.entitlements; sourceTree = "<group>"; };
+		1663B99E2E7AE01B00D7901E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1663B9B02E7AE10C00D7901E /* CustomCategoryColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoryColorType.swift; sourceTree = "<group>"; };
+		167FDCEA2E6EDCC100CF5322 /* EventAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EventAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		167FDCEB2E6EDCC100CF5322 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		167FDCED2E6EDCC100CF5322 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2136ECC52E0A06C0002C0499 /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2136ECF32E0A0710002C0499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2136ECF42E0A0710002C0499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2136ECF52E0A0710002C0499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2136ECF82E0A0710002C0499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27501E77412364931C14EFC2 /* Pods-Countdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.debug.xcconfig"; path = "Target Support Files/Pods-Countdown/Pods-Countdown.debug.xcconfig"; sourceTree = "<group>"; };
+		7666AB6681562C24A014D95A /* Pods-Countdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown.release.xcconfig"; path = "Target Support Files/Pods-Countdown/Pods-Countdown.release.xcconfig"; sourceTree = "<group>"; };
+		9C373F74C7F10A3F2342D9D6 /* Pods_Countdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		167FDD042E6EDCC300CF5322 /* Exceptions for "EventAppWidget" folder in "EventAppWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 167FDCE92E6EDCC100CF5322 /* EventAppWidgetExtension */;
+		};
+		16D1D70A2E61B83A007D6002 /* Exceptions for "CoreData" folder in "Countdown" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EventCoreData/EventCoreData.xcdatamodeld,
+				"EventCoreData+CoreDataClass.swift",
+				"EventCoreData+CoreDataProperties.swift",
+			);
+			target = 2136ECC42E0A06C0002C0499 /* Countdown */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1161E8222E253ED700A3DB88 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1162DB4F2E196843009F7A9E /* Controls */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		117CEA512E0E8B4F009F639C /* Fonts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		117CEA602E0E94CC009F639C /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11EB2ACC2E17FCFC00945A54 /* NewEventModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NewEventModule;
+			sourceTree = "<group>";
+		};
+		11F77F0A2E0C1951002BE0B3 /* GreetingModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GreetingModule;
+			sourceTree = "<group>";
+		};
+		11F77F132E0C195D002BE0B3 /* SplashModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SplashModule;
+			sourceTree = "<group>";
+		};
+		164845FE2EA7BA5200532266 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		164EF5F72E9E95AD003E5CCC /* WebView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		1667E50D2EAFB840003D00C8 /* PaywallModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PaywallModule;
+			sourceTree = "<group>";
+		};
+		1667E5182EAFB842003D00C8 /* SubscriptionReminderModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SubscriptionReminderModule;
+			sourceTree = "<group>";
+		};
+		1667E5352EAFB85F003D00C8 /* UserModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UserModule;
+			sourceTree = "<group>";
+		};
+		167FDCEF2E6EDCC100CF5322 /* EventAppWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				167FDD042E6EDCC300CF5322 /* Exceptions for "EventAppWidget" folder in "EventAppWidgetExtension" target */,
+			);
+			path = EventAppWidget;
+			sourceTree = "<group>";
+		};
+		16A382C52E13EEAF00168F89 /* Style */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Style;
+			sourceTree = "<group>";
+		};
+		16D1D6EA2E61B7C6007D6002 /* ImportEventModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ImportEventModule;
+			sourceTree = "<group>";
+		};
+		16D1D6F62E61B7DA007D6002 /* CoreData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				16D1D70A2E61B83A007D6002 /* Exceptions for "CoreData" folder in "Countdown" target */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		16D1D7002E61B7FA007D6002 /* EventsModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventsModule;
+			sourceTree = "<group>";
+		};
+		16F4B9FD2E6B660000E49633 /* CustomCategoryModule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CustomCategoryModule;
+			sourceTree = "<group>";
+		};
+		16F4BA0A2E6B676300E49633 /* UIElements */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		21D9292C2EC3B11C00E5DCE5 /* Modules */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		167FDCE72E6EDCC100CF5322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167FDCEE2E6EDCC100CF5322 /* SwiftUI.framework in Frameworks */,
+				167FDCEC2E6EDCC100CF5322 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2136ECC22E0A06C0002C0499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1773461A099A5914F9A0C91A /* Pods_Countdown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1663B99F2E7AE01B00D7901E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1663B99E2E7AE01B00D7901E /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1663B9B12E7AE10C00D7901E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1663B9B02E7AE10C00D7901E /* CustomCategoryColorType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		2136ECBC2E0A06C0002C0499 = {
+			isa = PBXGroup;
+			children = (
+				165B9BFE2E8FD74800A4AE21 /* EventAppWidgetExtension.entitlements */,
+				2136ECF92E0A0710002C0499 /* Countdown */,
+				167FDCEF2E6EDCC100CF5322 /* EventAppWidget */,
+				2136ECC62E0A06C0002C0499 /* Products */,
+				255B6712E209FCA9E900F11E /* Pods */,
+				EC0EDDA6F63FD75EBDAF18F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2136ECC62E0A06C0002C0499 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2136ECC52E0A06C0002C0499 /* Countdown.app */,
+				167FDCEA2E6EDCC100CF5322 /* EventAppWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2136ECF92E0A0710002C0499 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				21D9292C2EC3B11C00E5DCE5 /* Modules */,
+				164845FE2EA7BA5200532266 /* Views */,
+				164EF5F72E9E95AD003E5CCC /* WebView */,
+				165B9BFF2E8FD86F00A4AE21 /* Countdown.entitlements */,
+				1663B9B12E7AE10C00D7901E /* Types */,
+				2136ECF32E0A0710002C0499 /* AppDelegate.swift */,
+				2136ECF42E0A0710002C0499 /* Assets.xcassets */,
+				2136ECF52E0A0710002C0499 /* Info.plist */,
+				11F77F062E0C1949002BE0B3 /* LaunchScreen.storyboard */,
+				2136ECF82E0A0710002C0499 /* SceneDelegate.swift */,
+				164844932EA28D7600532266 /* MainTabBarController.swift */,
+				117CEA512E0E8B4F009F639C /* Fonts */,
+				16F4BA0A2E6B676300E49633 /* UIElements */,
+				16A382C52E13EEAF00168F89 /* Style */,
+				16D1D6F62E61B7DA007D6002 /* CoreData */,
+				1161E8222E253ED700A3DB88 /* Services */,
+				11F77F132E0C195D002BE0B3 /* SplashModule */,
+				11F77F0A2E0C1951002BE0B3 /* GreetingModule */,
+				1667E5352EAFB85F003D00C8 /* UserModule */,
+				16D1D7002E61B7FA007D6002 /* EventsModule */,
+				117CEA602E0E94CC009F639C /* Extensions */,
+				11EB2ACC2E17FCFC00945A54 /* NewEventModule */,
+				1162DB4F2E196843009F7A9E /* Controls */,
+				16D1D6EA2E61B7C6007D6002 /* ImportEventModule */,
+				16F4B9FD2E6B660000E49633 /* CustomCategoryModule */,
+				1667E50D2EAFB840003D00C8 /* PaywallModule */,
+				1667E5182EAFB842003D00C8 /* SubscriptionReminderModule */,
+				1663B99F2E7AE01B00D7901E /* Models */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		255B6712E209FCA9E900F11E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27501E77412364931C14EFC2 /* Pods-Countdown.debug.xcconfig */,
+				7666AB6681562C24A014D95A /* Pods-Countdown.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC0EDDA6F63FD75EBDAF18F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C373F74C7F10A3F2342D9D6 /* Pods_Countdown.framework */,
+				167FDCEB2E6EDCC100CF5322 /* WidgetKit.framework */,
+				167FDCED2E6EDCC100CF5322 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		167FDCE92E6EDCC100CF5322 /* EventAppWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167FDD032E6EDCC300CF5322 /* Build configuration list for PBXNativeTarget "EventAppWidgetExtension" */;
+			buildPhases = (
+				167FDCE62E6EDCC100CF5322 /* Sources */,
+				167FDCE72E6EDCC100CF5322 /* Frameworks */,
+				167FDCE82E6EDCC100CF5322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				167FDCEF2E6EDCC100CF5322 /* EventAppWidget */,
+			);
+			name = EventAppWidgetExtension;
+			productName = EventAppWidgetExtension;
+			productReference = 167FDCEA2E6EDCC100CF5322 /* EventAppWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2136ECC42E0A06C0002C0499 /* Countdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2136ECD82E0A06C1002C0499 /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildPhases = (
+				4CDA48A3A5C7FA3C72229689 /* [CP] Check Pods Manifest.lock */,
+				2136ECC12E0A06C0002C0499 /* Sources */,
+				2136ECC22E0A06C0002C0499 /* Frameworks */,
+				2136ECC32E0A06C0002C0499 /* Resources */,
+				B951657A64696500342EAD54 /* [CP] Embed Pods Frameworks */,
+				167FDD002E6EDCC300CF5322 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167FDCFE2E6EDCC300CF5322 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1161E8222E253ED700A3DB88 /* Services */,
+				1162DB4F2E196843009F7A9E /* Controls */,
+				117CEA512E0E8B4F009F639C /* Fonts */,
+				117CEA602E0E94CC009F639C /* Extensions */,
+				11EB2ACC2E17FCFC00945A54 /* NewEventModule */,
+				11F77F0A2E0C1951002BE0B3 /* GreetingModule */,
+				11F77F132E0C195D002BE0B3 /* SplashModule */,
+				164845FE2EA7BA5200532266 /* Views */,
+				164EF5F72E9E95AD003E5CCC /* WebView */,
+				1667E50D2EAFB840003D00C8 /* PaywallModule */,
+				1667E5182EAFB842003D00C8 /* SubscriptionReminderModule */,
+				1667E5352EAFB85F003D00C8 /* UserModule */,
+				16A382C52E13EEAF00168F89 /* Style */,
+				16D1D6EA2E61B7C6007D6002 /* ImportEventModule */,
+				16D1D7002E61B7FA007D6002 /* EventsModule */,
+				16F4B9FD2E6B660000E49633 /* CustomCategoryModule */,
+				16F4BA0A2E6B676300E49633 /* UIElements */,
+				21D9292C2EC3B11C00E5DCE5 /* Modules */,
+			);
+			name = Countdown;
+			productName = Countdown;
+			productReference = 2136ECC52E0A06C0002C0499 /* Countdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2136ECBD2E0A06C0002C0499 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					167FDCE92E6EDCC100CF5322 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2136ECC42E0A06C0002C0499 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 2136ECC02E0A06C0002C0499 /* Build configuration list for PBXProject "Countdown" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2136ECBC2E0A06C0002C0499;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2136ECC62E0A06C0002C0499 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2136ECC42E0A06C0002C0499 /* Countdown */,
+				167FDCE92E6EDCC100CF5322 /* EventAppWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		167FDCE82E6EDCC100CF5322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2136ECC32E0A06C0002C0499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2136ECFC2E0A0710002C0499 /* Assets.xcassets in Resources */,
+				11F77F072E0C1949002BE0B3 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDA48A3A5C7FA3C72229689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Countdown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B951657A64696500342EAD54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Countdown/Pods-Countdown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Countdown/Pods-Countdown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Countdown/Pods-Countdown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		167FDCE62E6EDCC100CF5322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2136ECC12E0A06C0002C0499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1663B9B22E7AE10C00D7901E /* CustomCategoryColorType.swift in Sources */,
+				1663B9A02E7AE01B00D7901E /* Event.swift in Sources */,
+				2136ECFA2E0A0710002C0499 /* AppDelegate.swift in Sources */,
+				2136ECFB2E0A0710002C0499 /* SceneDelegate.swift in Sources */,
+				164844942EA28D7600532266 /* MainTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		167FDCFE2E6EDCC300CF5322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 167FDCE92E6EDCC100CF5322 /* EventAppWidgetExtension */;
+			targetProxy = 167FDCFD2E6EDCC300CF5322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11F77F062E0C1949002BE0B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11F77F052E0C1949002BE0B3 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		167FDD012E6EDCC300CF5322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EventAppWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M6AFMJ358;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventAppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EventAppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.super.app.Countdown1.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		167FDD022E6EDCC300CF5322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EventAppWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M6AFMJ358;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventAppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EventAppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.super.app.Countdown1.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2136ECD92E0A06C1002C0499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27501E77412364931C14EFC2 /* Pods-Countdown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Countdown/Countdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M6AFMJ358;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Countdown/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar if you want to import of export events from there";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.super.app.Countdown1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2136ECDA2E0A06C1002C0499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7666AB6681562C24A014D95A /* Pods-Countdown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Countdown/Countdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M6AFMJ358;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Countdown/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar if you want to import of export events from there";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.super.app.Countdown1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2136ECDB2E0A06C1002C0499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2136ECDC2E0A06C1002C0499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		167FDD032E6EDCC300CF5322 /* Build configuration list for PBXNativeTarget "EventAppWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167FDD012E6EDCC300CF5322 /* Debug */,
+				167FDD022E6EDCC300CF5322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2136ECC02E0A06C0002C0499 /* Build configuration list for PBXProject "Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2136ECDB2E0A06C1002C0499 /* Debug */,
+				2136ECDC2E0A06C1002C0499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2136ECD82E0A06C1002C0499 /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2136ECD92E0A06C1002C0499 /* Debug */,
+				2136ECDA2E0A06C1002C0499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2136ECBD2E0A06C0002C0499 /* Project object */;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24299" systemVersion="24G231" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="EventCoreData" representedClassName="EventCoreData" syncable="YES">
+        <attribute name="alertOption" optional="YES" attributeType="String"/>
+        <attribute name="calendarItemIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isAllDay" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="repeatOption" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Binary"/>
+        <attribute name="widgetBackgroundState" optional="YES" attributeType="Binary"/>
+    </entity>
+</model>
